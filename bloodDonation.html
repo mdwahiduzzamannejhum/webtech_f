@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life Saver Blood Donation Program collects donor information and emergency blood request details.">
+    <title>Life Saver Blood Donation Program</title>
+    <link rel="stylesheet" href="bloodoner.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Life Saver Blood Donation Program</h1>
+        <p>Helping collect donor information and emergency blood request details for the local community.</p>
+    </header>
+
+    <main>
+
+    <div class="form-container">
+        <section>
+            <article>
+
+
+
+<!-- prothom form amr.......................................................................................... -->
+                <h2>Blood Donor Registration Form</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Donor Information</legend>
+
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="age">Age</label>
+                        <input type="number" id="age" name="age" min="18" required>
+
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="bloodGroup">Blood Group</label>
+                        <select id="bloodGroup" name="bloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select><br>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" rows="4" required></textarea><br>
+
+                        <label for="lastDonationDate">Last Donation Date</label>
+                        <input type="date" id="lastDonationDate" name="lastDonationDate" required><br>
+
+                        <label for="healthCondition">Health Condition</label>
+                        <select id="healthCondition" name="healthCondition" required>
+                            <option value="">Select Health Condition</option>
+                            <option value="healthy">Healthy</option>
+                            <option value="minorIllness">Minor Illness</option>
+                            <option value="majorIllness">Major Illness</option>
+                        </select>
+                    </fieldset>
+
+                    <button type="submit">Register Blood Donor</button>
+                </form>
+            </article>
+        </section>
+<!-- prothom form end.......................................................................................... -->
+        <section>
+            <article>
+
+<!-- 2nd form end.......................................................................................... -->
+                <h2>Blood Request Form</h2>
+                <form action="#" method="post" class="form-box">
+                    <fieldset >
+                        <legend>Request Information</legend>
+
+                        <label for="patientName">Patient Name</label>
+                        <input type="text" id="patientName" name="patientName" required>
+
+                        <label for="requiredBloodGroup">Required Blood Group</label>
+                        <select id="requiredBloodGroup" name="requiredBloodGroup" required>
+                            <option value="">Select Blood Group</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+
+                        <label for="hospitalName">Hospital Name</label>
+                        <input type="text" id="hospitalName" name="hospitalName" required>
+
+                        <label for="emergencyContact">Emergency Contact Number</label>
+                        <input type="tel" id="emergencyContact" name="emergencyContact" required>
+
+                        <label for="requiredDate">Required Date</label>
+                        <input type="date" id="requiredDate" name="requiredDate" required>
+
+                        <label for="additionalMessage">Additional Message</label>
+                        <textarea id="additionalMessage" name="additionalMessage" rows="4" required></textarea>
+                    </fieldset>
+
+                    <button type="submit">Submit Patient Request</button>
+                </form>
+            </article>
+        </section>
+<!--2nd form amr done.......................................................................................... -->
+
+
+<!--amr table er section    -->
+        <section>
+            <article>
+                <h2>Available Blood Groups and Registered Donors</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Blood Group</th>
+                            <th>Registered Donors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A+</td><td>48</td></tr>
+                        <tr><td>A-</td><td>16</td></tr>
+                        <tr><td>B+</td><td>34</td></tr>
+                        <tr><td>B-</td><td>11</td></tr>
+                        <tr><td>AB+</td><td>9</td></tr>
+                        <tr><td>AB-</td><td>4</td></tr>
+                        <tr><td>O+</td><td>52</td></tr>
+                        <tr><td>O-</td><td>7</td></tr>
+                    </tbody>
+                </table>
+            
+            </article>
+        </section>
+
+
+        
+</div>
+<!--amr table er section    -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Life Saver Blood Donation Program</p>
+    </footer>
+</body>
+</html>
